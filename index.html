@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch - App By Sagar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: grid;
+            height: 100vh;
+            place-content: center;
+            text-align: center;
+            font-family: sans-serif;
+            border:2px solid black;
+            background-color: rgb(32, 32, 99);
+        }
+        button{
+            margin-top: 10px;
+            padding: 5px 0;
+            font-weight: 700;
+            
+        }
+        #time{
+            border: 7px solid black;
+            margin: 15px 0;
+            padding: 10px;
+            color: rgb(82, 255, 2);
+            background-color: #000000ea ;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+        #heading{
+            margin-bottom: 20px;
+            color: rgb(255, 217, 0);
+        }
+        #mins,#secs{
+            font-size: 35px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <audio src="btn_sound.wav" id="clickSound"></audio>
+    <div class="main">
+        <h1 id="heading">Stop Watch</h1>
+        <h1 id="time"><span id="mins"> 0 </span> m &nbsp;:&nbsp; <span id="secs"> 0 </span> s </h1>
+        <button id="start">Lets Go</button>
+        <button id="stop">Lets Stop</button>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
